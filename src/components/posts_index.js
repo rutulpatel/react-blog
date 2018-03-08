@@ -14,7 +14,9 @@ class PostsIndex extends Component {
             if (post.title) 
             return (
                 <li className="list-group-item" key={post.id}>
-                    {post.title}
+                    <Link to={`/posts/${post.id}`} >
+                        {post.title}
+                    </Link>
                 </li>
             );
         });
